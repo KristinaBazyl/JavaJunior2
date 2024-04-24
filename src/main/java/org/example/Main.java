@@ -10,6 +10,8 @@ public class Main {
         MyClass myClass = new MyClass();
         RandomDateProcessor.processRandomDate(myClass);
         System.out.println(myClass.getDate());
+        System.out.println(myClass.getDate1());
+        System.out.println(myClass.getLocalDate());
 
     }
 }

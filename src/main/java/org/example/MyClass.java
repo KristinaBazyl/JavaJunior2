@@ -12,11 +12,18 @@ public class MyClass {
 
     @RandomDate(min = 1262304000000L, max =1293753600000L )
     private Date date;
+
+    @RandomDate()
     private Date date1;
 
+    @RandomDate()
     private LocalDate localDate;
+
+    @RandomDate()
     private LocalDateTime localDateTime;
+    @RandomDate()
     private Instant instant;
+
     public String getDate() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
         return simpleDateFormat.format(date);
@@ -24,6 +31,7 @@ public class MyClass {
     }
 
     public LocalDate getLocalDate() {
+
         return localDate;
     }
 
@@ -38,4 +46,5 @@ public class MyClass {
     public Instant getInstant() {
         return instant;
     }
+
 }
